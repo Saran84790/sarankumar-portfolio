@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #14213d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fca311;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fca311;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #14213d;
+  margin-bottom: 1rem;
+  border-left: 5px solid #fca311;
+  padding-left: 1rem;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+#home {
+  background: linear-gradient(to right, #14213d, #31426f);
+  color: #ffffff;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#home p {
+  font-size: 1.3rem;
+  color: #fca311;
+}
+
+#resume a {
+  display: inline-block;
+  background-color: #fca311;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+#resume a:hover {
+  background-color: #e29500;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;  /* Stack the navbar items vertically */
+    align-items: flex-start;  /* Align items to the left */
+  }
+
+  nav ul {
+    flex-direction: column;  /* Ensure list items are stacked vertically */
+    gap: 1rem;
+    width: 100%;              /* Allow it to take full width */
+    padding-top: 1rem;
+    display: flex;            /* Make it behave like flexbox */
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;        /* Increase font size for easier readability */
+    padding: 10px;            /* Add some padding for touch devices */
+  }
+
+  #home h1 {
+    font-size: 2rem;          /* Smaller font size for mobile */
+  }
+
+  #home p {
+    font-size: 1rem;          /* Adjust text size for mobile */
+  }
+}
+
